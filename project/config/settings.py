@@ -1,3 +1,5 @@
+# Файл хранит Переменные-Настройки для нашего django проекта
+
 """
 Django settings for config project.
 

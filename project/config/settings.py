@@ -1,4 +1,3 @@
-# Файл хранит Переменные-Настройки для нашего django проекта
 
 """
 Django settings for config project.
@@ -41,8 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    
     "orders",
+    "products"
 ]
 
 

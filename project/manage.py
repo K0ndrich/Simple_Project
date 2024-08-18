@@ -1,4 +1,3 @@
-# Файл нужен для управления нашым проектом из командной строки
 
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""

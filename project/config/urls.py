@@ -1,4 +1,3 @@
-# Файл хранит URL пути по которым вызываються представления из views.py
 
 """
 URL configuration for config project.

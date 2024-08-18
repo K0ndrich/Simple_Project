@@ -15,10 +15,11 @@ class SalesOrder(models.Model):
     # создаем колонки для нашей модели
     amount = models.IntegerField()
     description = models.CharField(max_length=255)
-    
+
     # отношение -- один ко многим --
     # on_delete указываем что будет происходить с ячейками указаного пользователя при его удалении
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
     # отношение -- многие ко многим --
     products = models.ManyToManyField(Product)
+    

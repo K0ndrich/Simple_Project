@@ -1,4 +1,3 @@
-
 """
 URL configuration for config project.
 
@@ -15,9 +14,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+# django
 from django.contrib import admin
 from django.urls import path
 
+# my_project
+from orders.views import orders_page
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
+    path("orders/", orders_page),
 ]

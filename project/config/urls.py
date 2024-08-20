@@ -19,12 +19,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# django_rest
+from rest_framework.routers import SimpleRouter
+
 # my_project
-from orders.views import orders_page
+from orders.views import orders_page, OrderView , orders_app
+
 
 router = SimpleRouter()
+router.register("api/orders", OrderView)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("orders/", orders_page),
+    path("orders_page/", orders_app),
 ]
+
+# добавление путей роутера django_rest к глобальным url путям
+urlpatterns += router.urls

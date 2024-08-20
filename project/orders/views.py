@@ -20,3 +20,10 @@ class OrderView(ModelViewSet):
     # queryset хранит елементы которые мы будем выводить в api
     queryset = SalesOrder.objects.all()
     serializer_class = OrderSerializer
+
+
+def orders_app(request):
+    return render(
+        request,
+        "main_app.html",
+    )

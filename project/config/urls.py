@@ -22,6 +22,8 @@ from django.urls import path
 # my_project
 from orders.views import orders_page
 
+router = SimpleRouter()
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("orders/", orders_page),

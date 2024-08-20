@@ -1,1 +1,2 @@
-// Файл харнит код Java Script 
+// Файл хранит код Java Script 
+

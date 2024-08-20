@@ -27,7 +27,7 @@ from orders.views import orders_page, OrderView , orders_app
 
 
 router = SimpleRouter()
-router.register("api/orders", OrderView)
+router.register("api/orders/", OrderView)
 
 urlpatterns = [
     path("admin/", admin.site.urls),

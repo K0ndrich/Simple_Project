@@ -11,13 +11,20 @@
 
     <!-- подключение vue js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.38/vue.cjs.js"></script>
-    
+
     <!-- покдлчюем axios - ето дополнение к vue js для обработки запросов нашего API -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.4/axios.js"></script>
 </head>
 
 <body>
- 123123123123123
+    <!-- verbatim указывает django не обрабатывать етот кусок кода -->
+    {% verbatim %}
+    <div class="container" id="orders_app">
+
+
+    </div>
+    {% endverbatim %}
+    <script src="/static/app.js"></script>
 </body>
 
 </html>
